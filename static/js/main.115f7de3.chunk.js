@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{13:function(e,n,t){e.exports=t(21)},21:function(e,n,t){"use strict";t.r(n);var a=t(5),i=t(1),r=t.n(i);var c=Object(a.a)(function(){return r.a.createElement("div",null,r.a.createElement("div",null,"This is a Test [NOT ZERO] (11)"),r.a.createElement("div",null,"Just write anything here"))});customElements.define("my-platzbelegung-r2wc",c)}},[[13,2,1]]]);
-//# sourceMappingURL=main.115f7de3.chunk.js.map
