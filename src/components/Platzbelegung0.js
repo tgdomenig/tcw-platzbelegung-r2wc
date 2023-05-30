@@ -13,15 +13,15 @@ import {getToolbar} from '../util/CalendarToolbar'
 import calendarStyles from 'react-big-calendar/lib/css/react-big-calendar.css'
 import additionalStyles from './Platzbelegung.css'
 
-/*
 import {fetchEvents} from '../data/DataSource'
 import { stageEvents } from '../data/StageEvents';
+/*
 */
 export default function Platzbelegung() {
 
   return(
     <div>
-      <div>This is a Test (4)</div>
+      <div>This is a Test (6)</div>
       <div>Just write anything here</div>
     </div>
   );
