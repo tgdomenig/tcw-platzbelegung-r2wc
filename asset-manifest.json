@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tcw-platzbelegung-r2wc/static/css/main.7e8250fe.css",
-    "main.js": "/tcw-platzbelegung-r2wc/static/js/main.f8d49040.js",
+    "main.js": "/tcw-platzbelegung-r2wc/static/js/main.934a785b.js",
     "index.html": "/tcw-platzbelegung-r2wc/index.html",
     "main.7e8250fe.css.map": "/tcw-platzbelegung-r2wc/static/css/main.7e8250fe.css.map",
-    "main.f8d49040.js.map": "/tcw-platzbelegung-r2wc/static/js/main.f8d49040.js.map"
+    "main.934a785b.js.map": "/tcw-platzbelegung-r2wc/static/js/main.934a785b.js.map"
   },
   "entrypoints": [
     "static/css/main.7e8250fe.css",
-    "static/js/main.f8d49040.js"
+    "static/js/main.934a785b.js"
   ]
 }
