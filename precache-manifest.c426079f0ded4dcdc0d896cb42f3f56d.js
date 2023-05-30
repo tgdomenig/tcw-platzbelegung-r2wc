@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8aa941b09413564e647b",
+    "revision": "b984b656b732eecbaf23",
     "url": "/tcw-platzbelegung-r2wc/static/css/main.f93a40cb.chunk.css"
   },
   {
-    "revision": "8aa941b09413564e647b",
-    "url": "/tcw-platzbelegung-r2wc/static/js/main.8aa941b0.chunk.js"
+    "revision": "b984b656b732eecbaf23",
+    "url": "/tcw-platzbelegung-r2wc/static/js/main.b984b656.chunk.js"
   },
   {
     "revision": "8e6e6337ab0b64314f53",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/tcw-platzbelegung-r2wc/static/js/runtime~main.7f26e279.js"
   },
   {
-    "revision": "4a14238df2eb2a11a060983af903b44d",
+    "revision": "d3ccfa50270df0f29f0ae867a2fa02ac",
     "url": "/tcw-platzbelegung-r2wc/index.html"
   }
 ];
