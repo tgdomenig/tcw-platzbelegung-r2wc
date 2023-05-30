@@ -2,7 +2,7 @@
 export default function Test() {
   return(
     <div>
-      <h1>This is a Test</h1>
+      <div>This is a Test</div>
       <div>Just write anything here</div>
     </div>
   );

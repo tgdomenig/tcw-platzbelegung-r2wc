@@ -6,3 +6,25 @@ Beispiel-Code: https://github.com/rjspencer/r2wc-checklist
 npx create-react-app tcw-platzbelegung-r2wc
 
 npm i @r2wc/react-to-web-component
+
+// push to github: https://github.com/tgdomenig/tcw-platzbelegung-r2wc
+
+
+// install github pages
+npm install gh-pages --save-dev
+
+// add the following to package.json:
+"homepage": "tcw-platzbelegung-r2wc",
+
+// add the following to package.json => "scripts": {}
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+npm run deploy
+
+/*
+In Github => Pages gibt es jetzt eine URL, die auf eine Webseite zeigt mit der Komponente. 
+In der Source dieser Seite findet man folgenden script tag:
+*/
+<script defer="defer" src="https://tgdomenig.github.io/tcw-platzbelegung-r2wc/tcw-platzbelegung-r2wc/static/js/main.12cca23c.js"></script>
+<my-platzbelegung-r2wc></my-platzbelegung-r2wc>
