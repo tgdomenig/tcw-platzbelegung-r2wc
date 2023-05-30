@@ -26,5 +26,14 @@ npm run deploy
 In Github => Pages gibt es jetzt eine URL, die auf eine Webseite zeigt mit der Komponente. 
 In der Source dieser Seite findet man folgenden script tag:
 */
-<script defer="defer" src="https://tgdomenig.github.io/tcw-platzbelegung-r2wc/tcw-platzbelegung-r2wc/static/js/main.12cca23c.js"></script>
+<script defer="defer" src="https://tgdomenig.github.io/tcw-platzbelegung-r2wc/static/js/main.2295f9f7.js"></script>
 <my-platzbelegung-r2wc></my-platzbelegung-r2wc>
+
+// weitere Installs
+npm install date-fns
+npm install antd
+npm install react-big-calendar
+
+
+/// 
+// @import '../../node-modules/   antd/dist/antd.css';
