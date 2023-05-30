@@ -18,7 +18,7 @@ import additionalStyles from './Platzbelegung.css'
 
 import {fetchEvents} from '../data/DataSource'
 import { stageEvents } from '../data/StageEvents';
-*/Calendar
+*/
 export default function Platzbelegung() {
 
   return(
