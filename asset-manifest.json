@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/tcw-platzbelegung-r2wc/static/js/main.12cca23c.js",
+    "main.js": "/tcw-platzbelegung-r2wc/static/js/main.2295f9f7.js",
     "index.html": "/tcw-platzbelegung-r2wc/index.html",
-    "main.12cca23c.js.map": "/tcw-platzbelegung-r2wc/static/js/main.12cca23c.js.map"
+    "main.2295f9f7.js.map": "/tcw-platzbelegung-r2wc/static/js/main.2295f9f7.js.map"
   },
   "entrypoints": [
-    "static/js/main.12cca23c.js"
+    "static/js/main.2295f9f7.js"
   ]
 }
