@@ -1,18 +1,19 @@
 {
-  "homepage": "https://github.com/tgdomenig/tcw-platzbelegung-r2wc",
+  "homepage": "/tcw-platzbelegung-r2wc",
   "name": "tcw-platzbelegung-r2wc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@r2wc/react-to-web-component": "^2.0.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.5.2",
     "date-fns": "^2.30.0",
-    "react": "17.0.2",
+    "react": "^18.2.0",
     "react-big-calendar": "^1.6.9",
-    "react-dom": "17.0.2",
-    "react-scripts": "5.0.1",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^2.1.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
