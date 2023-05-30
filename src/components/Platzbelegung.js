@@ -17,7 +17,7 @@ import { stageEvents } from '../data/StageEvents';
 
 export default function Platzbelegung() {
 
-  const [events, setEvents] = useState([])
+  const [events, setEvents] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   /* 
