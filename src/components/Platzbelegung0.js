@@ -10,10 +10,10 @@ import {getToolbar} from '../util/CalendarToolbar'
 
 //import {  Styled } from 'direflow-component';
 
-/*
 import calendarStyles from 'react-big-calendar/lib/css/react-big-calendar.css'
 import additionalStyles from './Platzbelegung.css'
 
+/*
 import {fetchEvents} from '../data/DataSource'
 import { stageEvents } from '../data/StageEvents';
 */
