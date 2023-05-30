@@ -24,14 +24,9 @@ export default function Platzbelegung() {
 
   return(
     <div>
-      <div>This is a Test (9)</div>
+      <div>This is a Test (10)</div>
       <div>Just write anything here</div>
     </div>
   );
 
-}
-
-function getStartOfWeek(day=new Date()) {
-  const opts = {weekStartsOn: 1};
-  return(startOfWeek(day, opts));
 }
