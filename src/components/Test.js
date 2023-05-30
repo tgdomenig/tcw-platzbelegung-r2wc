@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Test() {
 
-  const x = 1; // [x, setX] = useState(0);
+  const [x, setX] = useState(0);
 
   if (x === 0) {
     return(
