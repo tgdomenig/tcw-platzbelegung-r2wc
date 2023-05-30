@@ -1,0 +1,8 @@
+
+Tutorial React Web Component: https://www.bitovi.com/blog/how-to-create-a-web-component-with-create-react-app
+
+Beispiel-Code: https://github.com/rjspencer/r2wc-checklist
+
+npx create-react-app tcw-platzbelegung-r2wc
+
+npm i @r2wc/react-to-web-component
