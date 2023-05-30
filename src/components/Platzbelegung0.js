@@ -4,10 +4,8 @@ import { Calendar, Views } from 'react-big-calendar'
 // import {Modal, Spin} from 'antd'
 import {startOfWeek, addDays, format} from 'date-fns';
 
-/*
 import {localize, fmtEventStartEnd, formatTimestamp} from '../util/CalendarLocalizer'
 import {getToolbar} from '../util/CalendarToolbar'
-*/
 
 
 //import {  Styled } from 'direflow-component';
@@ -23,7 +21,7 @@ export default function Platzbelegung() {
 
   return(
     <div>
-      <div>This is a Test (3)</div>
+      <div>This is a Test (4)</div>
       <div>Just write anything here</div>
     </div>
   );
