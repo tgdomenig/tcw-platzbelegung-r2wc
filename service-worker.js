@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tgdomenig/tcw-platzbelegung-r2wc/precache-manifest.5454a2b17b9db517761f45e8a3b5837b.js"
+  "/tcw-platzbelegung-r2wc/precache-manifest.8620a2491f15bad41cfdfed9c091a819.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/tgdomenig/tcw-platzbelegung-r2wc/index.html", {
+workbox.routing.registerNavigationRoute("/tcw-platzbelegung-r2wc/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
