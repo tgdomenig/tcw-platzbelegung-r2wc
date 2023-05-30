@@ -231,6 +231,10 @@ export default function Platzbelegung() {
   }
 
   return(
+    <div>HELLO THIS IS JUST A PLACEHOLDER</div>
+  );
+
+  return(
     <div style={{...calendarStyles, ...additionalStyles}}>
       <div id="tcw-platzbelegung-web-component" className="web-component tcw-platzbelegung">
 
