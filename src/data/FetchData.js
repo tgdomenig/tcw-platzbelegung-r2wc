@@ -23,7 +23,7 @@ export async function fetchRestData({endpoint, startDate, go_on_callback, perPag
   let slug = endpoint, separator = "?";
   
   if (startDate) {
-    slug += `${separator}min_concert_date=${format(startDate, "yyyyMMdd")}`;
+    slug += `${separator}start_date=${format(startDate, "yyyyMMdd")}`;
     separator = "&";
   }
   if (perPage) {
@@ -47,17 +47,27 @@ export async function fetchRestData({endpoint, startDate, go_on_callback, perPag
 
     const uri = `${slug}&page=${page}`;
 
-    const {totalPages, jsonData, error} = await fetch(uri).then(_fetchFn).catch(error => ({error}));
+    console.log("FETCHING: " + uri);
+
+    const {jsonData, error} = await fetch(uri).then(_fetchFn).catch(error => ({error}));
 
     if (error) {
       return ({error});
     }
 
-    const events = isEventsCalendarCase ? (await jsonData).events : (await jsonData);
+    const {events, total_pages: totalPages} = await jsonData;
+//    const events = isEventsCalendarCase ? (await jsonData).events : (await jsonData);
 
     if (events && events.length > 0) {
       fetchedEvents = [...fetchedEvents, ...events];
     }
+
+    // console.log("go-on, totalPages, page, uri");
+    // console.log(go_on);
+    // console.log(totalPages);
+    // console.log(page);
+    // console.log(uri);
+
   
     if ((! totalPages) || page >= totalPages) { // end of data
       go_on = false;

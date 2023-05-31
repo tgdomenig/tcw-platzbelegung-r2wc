@@ -35,6 +35,7 @@ export async function fetchEvents({startDate, minEndDate}) {
     if (! go_on) {
       lastFullyLoadedDay = addDays(currentLastDate, -1);
     }
+
     return go_on;
   }
 
