@@ -5,3 +5,6 @@ import Platzbelegung from './components/Platzbelegung.js';
 const platzbelegungCmp = r2wc(Platzbelegung);
 
 customElements.define("my-platzbelegung-r2wc", platzbelegungCmp);
+
+
+
