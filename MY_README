@@ -40,3 +40,10 @@ npm install react-big-calendar
 
 // create shell-file predeploy.sh to remove hash from main build (see tutorial mentioned above) and add it to the predeploy-script in package.json:
 "predeploy": "npm run build && sh predeploy.sh"
+
+
+// NAECHSTES PROBLEM: Der build-Prozess von create-react-app macht im Fall eines grösseren Programms Code-Splitting, d.h. die resultierenden JS- und CSS-Files 
+// werden in sogenannte .chunk-Dateien gesplittet. 
+// In https://gist.github.com/simpixelated/90a3c16c3ed268fe24f5e5c9585ced2f wird ausgeführt, wie sich das vermeiden lässt (benötigt package "rewire")
+// Bemerkung: ursprüngliche start- und build-scripts sind: {"start": "react-scripts start","build": "react-scripts build"}
+    
