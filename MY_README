@@ -34,6 +34,5 @@ npm install date-fns
 npm install antd
 npm install react-big-calendar
 
-
-/// 
-// @import '../../node-modules/   antd/dist/antd.css';
+// create shell-file predeploy.sh to remove hash from main build (see tutorial mentioned above) and add it to the predeploy-script in package.json:
+"predeploy": "npm run build && sh predeploy.sh"
