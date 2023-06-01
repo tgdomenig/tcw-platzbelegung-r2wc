@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tcw-platzbelegung-r2wc/precache-manifest.cf92fd4f9748f28266d5966d06999b91.js"
+  "/tcw-platzbelegung-r2wc/precache-manifest.719c441ff22ca5ea47c0ece9c5a74e6e.js"
 );
 
 workbox.clientsClaim();
