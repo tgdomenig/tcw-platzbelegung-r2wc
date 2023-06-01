@@ -9,8 +9,8 @@ import {getToolbar} from '../util/CalendarToolbar';
 
 //import {  Styled } from 'direflow-component';
 
-import calendarStyles from 'react-big-calendar/lib/css/react-big-calendar.css';
-import additionalStyles from './Platzbelegung.css';
+import 'react-big-calendar/lib/css/react-big-calendar.css'; //calendarStyles from
+import  './Platzbelegung.css'; // additionalStyles from
 
 import {fetchEvents} from '../data/DataSource'
 import { stageEvents } from '../data/StageEvents';
@@ -231,7 +231,7 @@ export default function Platzbelegung() {
   }
 
   return(
-    <div>
+    <div >
       <div id="tcw-platzbelegung-web-component" className="web-component tcw-platzbelegung">
 
       <Modal {...popupProps} footer={false} visible={eventPopupVisible} onCancel={()=> { setEventPopupVisible(false); }} >
