@@ -1,16 +1,16 @@
-import React, {useState, useEffect} from 'react'
-import { Calendar, Views } from 'react-big-calendar'
+import React, {useState, useEffect} from 'react';
+import { Calendar, Views } from 'react-big-calendar';
 
 import {Modal, Spin} from 'antd'
 import {startOfWeek, addDays, format} from 'date-fns';
 
-import {localize, fmtEventStartEnd, formatTimestamp} from '../util/CalendarLocalizer'
-import {getToolbar} from '../util/CalendarToolbar'
+import {localize, fmtEventStartEnd, formatTimestamp} from '../util/CalendarLocalizer';
+import {getToolbar} from '../util/CalendarToolbar';
 
 //import {  Styled } from 'direflow-component';
 
-import calendarStyles from 'react-big-calendar/lib/css/react-big-calendar.css'
-import additionalStyles from './Platzbelegung.css'
+import calendarStyles from 'react-big-calendar/lib/css/react-big-calendar.css';
+import additionalStyles from './Platzbelegung.css';
 
 import {fetchEvents} from '../data/DataSource'
 import { stageEvents } from '../data/StageEvents';
@@ -231,7 +231,7 @@ export default function Platzbelegung() {
   }
 
   return(
-    <div style={{...calendarStyles, ...additionalStyles}}>
+    <div>
       <div id="tcw-platzbelegung-web-component" className="web-component tcw-platzbelegung">
 
       <Modal {...popupProps} footer={false} visible={eventPopupVisible} onCancel={()=> { setEventPopupVisible(false); }} >

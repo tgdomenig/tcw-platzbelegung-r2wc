@@ -1,0 +1,824 @@
+/*
+Theme Name: Child Theme TCW
+Template: virtue_premium
+Theme URI: https://www.kadencethemes.com/product/virtue-premium-theme/
+Description: The Virtue theme is extremely versatile with tons of options, easy to customize and loaded with great features. The clean modern design is built with html5 and css3 and uses the powerful responsive framework from Bootstrap to be a fully responsive and mobile friendly. It's fully ecommerce (Woocommerce) ready with all the tools you need to design an awesome online store. The versatile design is perfect for any kind of business, online store, portfolio or personal site. We built Virtue with a powerful options panel where you can set things like your home layout, sliders, custom fonts, and completely customize your look without writing any CSS. You are going to love how easy this theme is to work with.  Virtue was built and designed by <a href="http://kadencethemes.com/">Kadence Themes</a>.
+Version: 3.8.9
+Author: Kadence Themes
+Author URI: https://www.kadencethemes.com/
+Tags: flexible-width, two-columns, one-column, custom-colors, custom-header, custom-menu, featured-images, translation-ready, theme-options, photoblogging
+Text Domain: virtue
+
+License: GPL
+License URI: http://www.gnu.org/copyleft/gpl.html
+*/
+
+/* ----------------- MAIN SLIDER MAIN------------------ */
+.home ul.kad-slider-pagination { display: none !important; }
+
+/* ----------------- CONTENTCLASS ---------------- */
+/* no padding following red header line */
+
+.contentclass { padding-top: 15 !important; }
+
+h1.entry-title .entry-title{display:none !important;}
+
+
+@media (min-width: 992px ) {
+    .kad-sidebar .widget-first { margin-top: 0 !important; }
+}
+
+.kad-sidebar .widget .kad-icon-box  { 
+    margin-top: 0px !important; margin-bottom: 0px !important; }
+    
+
+/*
+
+.kad-sidebar .widget { margin-top: 15px !important; }
+.kad-sidebar .widget-first { margin-top: -2px !important; }
+ */
+/* ----------------- END CONTENTCLASS ---------------- */
+
+/* ------------------ ITC GENERAL ------------------- */
+
+/* The theme does not change the font size for small devices. We do it here */
+@media (max-width: 767px) {
+    h1 { font-size: 32px !important; line-height: 38px !important; }
+    h2 { font-size: 28px !important; line-height: 34px !important; }
+    h3 { font-size: 24px !important; line-height: 30px !important; }
+    h4 { font-size: 18px !important; line-height: 24px !important; }
+    h5 { font-size: 16px !important; line-height: 22px !important; }
+	h1.entry-title {display:none !important;}
+
+
+}
+
+
+.itc-border-bottom { border-bottom: solid 1px rgb(221,221,221); padding: 10px 0; }
+
+.itc-align-siblings { margin-bottom: 30px !important; }
+
+.itc-call-to-action-box .so-widget-sow-button { margin-top: 20px !important; }
+
+/* .itc-call-to-action-with-link-in-subtitle .sow-cta-subtitle { text-align: right; } */
+
+/*
+.virtue_calltoaction_widget a { background-color: #808080 !important;
+font-weight: 700 !important; }
+.virtue_calltoaction_widget a:hover { background-color: #666666 !important; }
+*/
+
+/* Login-Menu im Footer */
+#menu-login-menu {
+    margin-left: 0 !important;
+}
+#menu-login-menu li a {
+    /*
+    border-radius: 4px !important;
+    background-color: #666666 !important;
+    */
+    max-width: 220px !important; /* theme has max-width 130px */
+}
+
+/* Scheint ein SiteOrigin BUG zu sein: das Widget setzt eine background-color,
+was zur Folge hat, dass wenn im Editor ein background image eingegeben wird, dieses
+nicht sichtbar ist. */
+.itc-call-to-action-box .sow-cta-base { background-color: rgba(0,0,0,0); }
+
+h2.kt_imgsplit_title { font-size: 28px; line-height: 34px; }    
+@media (max-width: 767px) {
+    h2.kt_imgsplit_title { font-size: 24px; line-height: 30px; }
+}
+
+.tcw-standard-button {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px; margin-top: 0;
+    text-size-adjust: 100%;
+    text-align: center;
+}
+
+.tcw-standard-button a {
+    cursor: pointer;
+    background: #E30615;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+
+/* ----------- Additional Styles for Direflow-Webkomponente (Anzeige Platzbelegung) --------- */
+.web-component.tcw-platzbelegung .rbc-toolbar .rbc-button {
+    color: #E30615 !important;
+  }
+  
+  /*
+  .web-component.tcw-platzbelegung .rbc-time-header-content {
+    line-height: 40px;
+  }
+  */
+  
+  .web-component.tcw-platzbelegung .rbc-time-header-content .rbc-header, .rbc-agenda-view .rbc-agenda-table .rbc-header {
+    color: white;
+    background-color: #E30615;
+  /*    margin: auto auto; */
+  }
+  
+  .web-component.tcw-platzbelegung .rbc-time-header-content .rbc-time-header-cell {
+    min-height: 48px;
+  }
+  .web-component.tcw-platzbelegung .rbc-time-header-content .rbc-time-header-cell .rbc-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+  }
+  
+  @media (max-width: 480px) { /* reduce fonts for small screens */
+    .web-component.tcw-platzbelegung .rbc-toolbar .rbc-button {
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 12px;
+    }
+    .rbc-time-gutter { font-size: 12px; }
+/*    .rbc-label.rbc-time-header-gutter { width: 40px; max-width: none; min-width: none;} */
+  }
+  
+/* ----------- END Additional Styles for Direflow-Webkomponente (Anzeige Platzbelegung) --------- */
+    
+.tcw-standard-button a:hover,
+.tcw-standard-button a:focus {
+    background: #FF3D3D;
+    color: white;
+}
+
+.tcw-standard-button a .sow-icon-fontawesome {
+    font-size: 20px;
+    margin: -4px 16px -2px -16px;
+}
+
+/* ------------------ END ITC GENERAL ------------------- */
+
+
+/* ------------------ BUTTONS AND LINKS -------------- */
+
+.virtue_calltoaction_widget a,
+.itc-call-to-action-box .so-widget-sow-button a.itc-call-to-action-button,
+.tribe_events .tribe-events-content .btn.btn-default,
+#wppb-submit,
+.itc-call-to-action-box
+{
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+.itc-headline-box
+{
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 4px !important;
+    font-weight: 700 !important;
+    border-color: #E30615 !important;
+}
+
+.virtue_calltoaction_widget a,
+.itc-call-to-action-box .so-widget-sow-button a.itc-call-to-action-button,
+.tribe_events .tribe-events-content .btn.btn-default,
+#wppb-submit 
+{
+    border-radius: 4px !important;
+    background-image: none !important;
+    font-weight: 700 !important;
+    transition-duration: 0.4s !important;
+    transition-timing-function: ease !important;
+}
+
+
+#content a,
+#containerfooter a,
+#menu-login-menu li a,
+#tribe-events a,
+#tcw-jahreskalender a
+{
+    transition-duration: 0.4s !important;
+    transition-timing-function: ease !important;
+}
+
+
+/* ------------------- SIDEBAR ICON WIDGETS --------------------- */
+.itc-icon-widget
+{
+    border-width: 2px;
+    border-style: solid;
+}
+
+.itc-icon-widget,
+.itc-icon-widget .kad-icon-box,
+.itc-icon-widget .kad-icon-box a i,
+.itc-icon-widget .kad-icon-box a h5
+{
+    transition-duration: 0.4s !important;
+    transition-timing-function: ease !important;
+}
+
+/* ------------------- END SIDEBAR ICON WIDGETS --------------------- */
+
+/* ------------------ HEADER FRONT PAGE ------------------ */
+
+/*  All we want here is a margin bottom for the header area. 
+    Because of the element's layout and padding, this is a bit complicated.
+    If width is at least 1200px, the border is added at the bottom of the header section,
+    so that it stays in place when scrolling.
+    However, for smaller sizes this doesn't work because of the way the elements are laid out (padding).
+    Therefore, the bodder is added as border-top of the slider, which also works but disappears when scrolling.
+*/
+@media (min-width: 1200px) {
+    #kad-shrinkheader .kad-header-left .logocase,
+    #kad-shrinkheader .kad-header-right .nav-main
+    {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+    
+    #kad-shrinkheader .kad-header-left { padding-right: 0; }
+    #kad-shrinkheader .kad-header-right { padding-left: 0; }
+}
+
+/* There seems to be a bug in the theme regarding the color of the mobile menu. We overwrite it here. */
+.mobile-header-container a, .mobile-header-container .mh-nav-trigger-case { color: #E30615 !important; }
+.mobile-header-container .mh-nav-trigger-case:hover, .mobile-header-container a:hover { color: #c40000 !important; }
+
+@media (max-width: 1199px) {
+    .ktslider_home_hidetop { 
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+
+
+}
+
+
+.kad-header-left
+{
+    width: 20% !important;
+}
+.kad-header-right
+{
+    width: 80% !important;
+/*    height: 178px !important;
+    background-image: url(img/schlaengge_2000.png) !important;   
+    
+    background-size: cover !important;
+*/
+}
+
+/* ------------------ END HEADER FRONT PAGE ------------------ */
+
+/* ------------------- HEADER SUB-PAGES --------------------- */
+
+#tcw-subpage-title-box-wrapper
+{
+    position: relative;
+    padding-bottom: 41.18%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+	
+	
+}
+#tcw-subpage-title-box {
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px 20px;
+    position: absolute;
+    left: 10%;
+    bottom: 12%;
+}
+#tcw-subpage-title-box h1
+{
+    color: white;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {    
+    #tcw-subpage-title-box h1 { font-size: 30px !important; line-height: 36px !important; }
+}
+@media (max-width: 639px) {
+    #tcw-subpage-title-box h1 { font-size: 24px !important; line-height: 28px !important; }
+}
+@media (max-width: 539px) {
+    #tcw-subpage-title-box h1 { font-size: 18px !important; line-height: 20px !important; }
+}
+
+/* general horizontal-layout settings */
+@media (max-width:1199px){
+    .itc-horlo-outer-wrapper .panel-grid-cell { float:none;width:auto }
+    .itc-horlo-outer-wrapper .panel-grid .panel-grid-cell-empty { display:none }
+    .itc-horlo-outer-wrapper .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }
+
+    #tcw-page-header .panel-grid-cell-left { display: none; }
+}
+
+/* bottom-align page title */
+@media screen and (min-width: 1200px) {
+    body.page-template-page-tcw-php #pageheader { display: none; }
+
+    .itc-horlo-outer-wrapper .panel-grid .panel-grid-cell { float:left }
+
+    /* specific tcw page header settings */
+    #tcw-page-header .panel-grid-cell-left { width:33% }
+    #tcw-page-header .panel-grid-cell-left .widget { width:34%; padding-right: 30px; }
+    #tcw-page-header .panel-grid-cell-right { width:66% }
+    #tcw-page-header .panel-grid-cell-right img { width:100% }
+    #tcw-page-header .panel-grid-cell .so-panel { margin-bottom:30px }
+    #tcw-page-header .panel-grid-cell .so-panel:last-child { margin-bottom:0px }
+
+    #tcw-page-header .panel-grid { margin-left:-15px;margin-right:-15px }
+    #tcw-page-header .panel-grid-cell { padding-left:15px;padding-right:15px }
+
+    #tcw-page-header
+    {
+        position: relative;
+        margin-bottom: 80px;
+    }
+    #tcw-page-header .panel-grid-cell-left .widget
+    {
+        position: absolute;
+        bottom: 0;
+    }
+
+    
+    #tcw-page-header .panel-grid-cell-left .widget { 
+        /* styling corresponding to theme */
+/*        border-top: 1px solid #eee; */
+        border-bottom: 1px solid #eee;
+        border-color: rgba(0,0,0,.05); 
+    }
+    #tcw-page-header .panel-grid-cell-right { padding-right: 0; }
+}
+
+/* ------------------- END HEADER SUB-PAGES --------------------- */
+
+/* ------------------- FORMATIERUNG VORSTANDSNEWS ---------------- */
+.ivycat-post { margin-bottom: 30px; }
+.ivycat-post .entry-title { margin-bottom: 20px; }
+.ivycat-post .entry-summary > ul > li { margin-bottom: 10px; }
+
+/* ------------------- END FORMATIERUNG VORSTANDSNEWS ---------------- */
+
+/* ------------------- TABLES ---------------- */
+/* HACK: 
+    Das UltimateTables Plugin erlaubt es nicht, eine custom-css-Klasse mit der Tabelle zu identifizieren. 
+    Wir benützen deshalb direkt die Table-Id, um die Titelzeile zu verstecken
+*/
+
+#table_25901506 thead { display: none !important; }table_28202077
+
+/* ------------------- DATENTABELLEN ---------------- */
+
+.dataTables_wrapper { margin-top: 20px !important; margin-bottom: 30px !important; }
+
+.itc-hero-widget .sow-hero-buttons
+{
+    text-align: center;
+}
+
+/*
+.homepromolink .infobanner
+{
+    background-position: center !important;
+}
+*/
+
+.itc-bistro-foto .infobanner
+{
+    background-position: top !important;
+}
+
+
+
+.wetterseiten-links
+{
+    font-size: 1.3em !important;
+    line-height: 1.6em !important;
+}
+
+/* --------------- EVENTS CALENDAR ------------- */
+/* Export-Funktion verstecken */
+.tribe-events-gcal,
+.tribe-events-ical
+{ 
+    display: none !important;
+}
+#tribe-events-footer 
+{
+    margin-top: 20px !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search {
+    display: none !important;
+}
+
+.tribe-events .tribe-events-c-subscribe-dropdown__container {
+	   display: none !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-venue {
+	   display: none !important;
+}
+/* -----------------------------------------
+Image Links (e.g. "Platzbelegung")
+-------------------------------------------- */
+
+
+.home-message h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* -------------- FORMATIERUNG SINGLE EVENT ------------------- */
+.tribe-events-schedule h2 { font-size: 22px !important; line-height: 36px !important; }
+
+/* so dass das Bild an die Header-Linie anschliesst */
+/* div.page-header { display: none !important; }*/
+
+
+#tribe-events-content { padding-top: 0 !important; margin-bottom: 20px !important; } 
+
+/* -------------- END FORMATIERUNG SINGLE EVENT ------------------- */
+/* -----------------------------------------
+Events Calendar on Front Page
+-------------------------------------------- */
+#tcw-calendar-as-list .panel-grid-cell-right {
+    margin-left: 6px !important;
+}
+
+
+.home #tribe-events-content .tribe-events-loop .tribe-events-event-image,
+.home #tribe-events-content .tribe-events-loop .tribe-events-list-event-description
+{
+    display: none !important;
+}
+
+.home .tribe-events-list .type-tribe_events
+{
+    padding-top: 6px !important;
+    padding-bottom: 0 !important;
+	
+}
+
+.home .tribe-events-list h2.tribe-events-list-event-title
+{
+    font-size: 1.2em !important;
+    line-height: 1.2em !important;
+
+}
+
+.home .tribe-events-loop .tribe-events-event-meta
+{
+    font-size: 1em !important;
+    line-height: 1em !important;
+    margin: 0 !important;
+    
+}
+.category-auf-veranstaltungsseite-anzeigen>.tribe-events-title-bar{
+	/*display: none !important;*/
+}
+
+.tribe-events-grid {
+	display: block !important;
+}
+
+/*Layout 514 von SiteOrigin*/  
+
+#tcw-calendar-as-list .panel-grid-cell-left { width:34% }
+#tcw-calendar-as-list .panel-grid-cell-right { width:65% ;margin-left: 6px !important;}
+#tcw-calendar-as-list .panel-grid-cell { float:left !important; }
+#tcw-calendar-as-list .panel-grid-cell .so-panel { margin-bottom:30px }
+#tcw-calendar-as-list .panel-grid-cell .so-panel:last-child { margin-bottom:0px }
+#tcw-calendar-as-list .panel-grid { margin-left:-15px;margin-right:-15px }
+#tcw-calendar-as-list .panel-grid-cell { padding-left:15px;padding-right:15px }
+
+@media (max-width:780px){ 
+#tcw-calendar-as-list .panel-grid-cell-left { width:100%; font-weight: bold; margin-left: 3px !important;}
+#tcw-calendar-as-list .panel-grid-cell-right { width:100% }
+   /*#tcw-calendar-as-list .panel-grid-cell { float:none;width:auto } 
+   #tcw-calendar-as-list .panel-grid-cell-left {float: left;
+    clear: left;
+    display:inline } */
+	#tcw-calendar-as-list .panel-grid-cell-right { display: block;margin-left: 15px !important; } 
+    #tcw-calendar-as-list .panel-grid .panel-grid-cell-empty { display:none } 
+    #tcw-calendar-as-list .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } 
+}
+
+/*
+horizontal line between calender list items 
+(note: only for jahreskalender, on front page already taken care of by events calendar shortcode)
+*/
+#tcw-jahreskalender #tcw-calendar-as-list .panel-grid { 
+    /*border-bottom: solid 1px rgb(221,221,221);*/
+    line-height: 32px;
+}
+
+#tcw-jahreskalender #tcw-jahreskalender-title 
+{
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    font-weight: 700 !important;
+    padding-left: 10px !important;
+	padding-right: 10px !important;
+    width: 100% !important;
+	height: 2em !important;
+    color: white !important;
+	display: inline !important;
+}
+
+
+
+/* Timetable Schedule für 5 Kolonnen */
+.sched-h-row .sched-h-row-events a.sched-event.sched-event-size-51 {
+    height: 20%;
+}
+
+.sched-h-row .sched-h-row-events a.sched-event.sched-event-size-52 {
+    height: 20% !important;
+    top: 20% !important;
+}
+
+.sched-h-row .sched-h-row-events a.sched-event.sched-event-size-53 {
+    height: 20%;
+    top: 40%;
+}
+
+.sched-h-row .sched-h-row-events a.sched-event.sched-event-size-54 {
+    height: 20%;
+    top: 60%;
+}
+
+.sched-h-row .sched-h-row-events a.sched-event.sched-event-size-55 {
+    height: 20%;
+    top: 80%;
+}
+
+.itc-past-event {
+    position: relative;
+    width: 100%;
+}
+
+.itc-past-event-image,
+.itc-past-event-image img {
+    width: 100%;
+    height: 120px;
+}
+
+.itc-past-event-name {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 120px;
+
+    line-height: 120px;
+
+    font-size: 1.4em;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    text-align: center;
+  
+    z-index: 10 !important;
+    transition: opacity, 1s cubic-bezier(0, 1, 0.5, 1);
+    transition-duration: opacity, 1s cubic-bezier(0, 1, 0.5, 1);
+
+    opacity: 0;
+}
+
+
+.itc-past-event:hover .itc-past-event-name {
+    opacity: 1;
+}
+
+/* ---------------------- ICON FONTS ------------------- */
+@font-face {
+    font-family: itc-iconfont-pipo;
+    src: url(assets/css/fonts/pipo/icomoon.woff);
+}
+
+/* 
+    NOTE: the name of the icons must start with "icon" because the theme matches on that to define it's styles
+
+.icon-pipo-wetter,
+.icon-pipo-plaetze,
+.icon-pipo-tennisschule,
+.icon-pipo-intern,
+.icon-pipo-suche
+{
+    font-family: itc-iconfont-pipo !important;
+}
+
+.icon-pipo-wetter:before { content: "\e903"; }
+.icon-pipo-plaetze:before { content: "\e901"; }
+.icon-pipo-tennisschule:before { content: "\e902"; }
+.icon-pipo-suche:before { content: "\e900"; }
+*/
+
+/* 
+    NOTE: the name of the icons must start with "icon" because the theme matches on that to define it's styles
+*/
+.icon-pipo-wetter,
+.icon-pipo-plaetze,
+.icon-pipo-tennisschule,
+.icon-pipo-forum
+{
+    font-family: itc-iconfont-pipo !important;
+}
+
+.icon-pipo-wetter:before { content: "\e903"; }
+.icon-pipo-plaetze:before { content: "\e901"; }
+.icon-pipo-tennisschule:before { content: "\e902"; }
+.icon-pipo-forum:before { content: "\e900"; }
+.icon-menu-bistro:before { content: "\e926"; }
+
+
+/* TENNIS-PLAYER ICONS */
+@font-face {
+    font-family: itc-iconfont-tennis-players;
+    src: url(assets/css/fonts/tennisplayers/icomoon.woff);
+}
+
+/* 
+    NOTE: the name of the icons must start with "icon" because the theme matches on that to define it's styles
+*/
+.icon-itc-tennis-player-1,
+.icon-itc-tennis-player-2,
+.icon-itc-tennis-player-3,
+.icon-itc-tennis-player-4,
+.icon-itc-tennis-player-5,
+.icon-itc-tennis-player-6,
+.icon-itc-tennis-player-7,
+.icon-itc-tennis-player-8,
+.icon-itc-tennis-player-9,
+.icon-itc-tennis-player-10,
+.icon-itc-tennis-player-11,
+.icon-itc-tennis-player-12
+{
+    font-family: itc-iconfont-tennis-players !important;
+}
+
+.icon-itc-tennis-player-1:before { content: "\e900"; }
+.icon-itc-tennis-player-2:before { content: "\e901"; }
+.icon-itc-tennis-player-3:before { content: "\e902"; }
+.icon-itc-tennis-player-4:before { content: "\e903"; }
+.icon-itc-tennis-player-5:before { content: "\e904"; }
+.icon-itc-tennis-player-6:before { content: "\e905"; }
+.icon-itc-tennis-player-7:before { content: "\e906"; }
+.icon-itc-tennis-player-8:before { content: "\e907"; }
+.icon-itc-tennis-player-9:before { content: "\e908"; }
+.icon-itc-tennis-player-10:before { content: "\e909"; }
+.icon-itc-tennis-player-11:before { content: "\e90a"; }
+.icon-itc-tennis-player-12:before { content: "\e90b"; }
+/* ---------------------- END ICON FONTS ------------------- */
+
+/* ----------------------------------------------------------------
+Platzbelegunskalender: Styling
+------------------------------------------------------------------- */
+
+#itc-tabelle-platzbelegung #tribe-events-content
+{
+    margin-bottom: 0 !important;
+}
+/* ----------------------------------------------------------------
+Platzbelegunskalender: Legende
+------------------------------------------------------------------- */
+
+.itc-platzbelegung-legende 
+{
+    padding: 0px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.itc-platzbelegung-legende h3
+{
+    line-height: 30px;
+    color: white !important;
+    font-size: 1em !important;    
+}
+
+/* ----------------------------------------------------------------
+Platzbelegunskalender: Plätze
+------------------------------------------------------------------- */
+
+/* fixiere Höhe so, dass im Platzbelegunskalender kein Scrolling mehr nötig ist */
+.tribe-events-grid .tribe-scroller
+{
+    height: 840px !important; 
+}
+
+.tribe-events-week-hourly-single.tribe-week-event.itc-platzbelegung
+{
+    width: 20% !important;
+}
+.tribe-events-week-hourly-single.tribe-week-event.itc-platzbelegung-1
+{
+    left: 0% !important;
+    background-color: #703A30;
+}
+.tribe-events-week-hourly-single.tribe-week-event.itc-platzbelegung-2
+{
+    left: 20% !important;
+    background-color: #965037;
+}
+.tribe-events-week-hourly-single.tribe-week-event.itc-platzbelegung-3
+{
+    left: 40% !important;
+    background-color: #D57646;
+}
+.tribe-events-week-hourly-single.tribe-week-event.itc-platzbelegung-4
+{
+    left: 60% !important;
+    background-color: #F0A400;
+}
+
+.tribe-events-week-hourly-single.tribe-week-event.itc-platzbelegung-5
+{
+    left: 80% !important;
+    background-color: #EACE53;
+}
+
+.itc-platzbelegung-title {
+    visibility: hidden;
+}
+
+/*
+.entry-title.summary  a,
+.tribe-events-grid .type-tribe_events .entry-title.summary  a {
+    transform: rotate(90deg) !important;
+}
+*/
+.red_box
+{
+	background-color: #E30615 !important;
+	color: white !important;
+	text-align: center !important;
+	}
+	
+	/* --------------------- ITC Vorstandsseite ----------------- */
+
+.itc-widget-wrapper {
+    overflow-x: hidden;
+    margin: auto;
+    margin-top: 40px !important;
+ }
+
+
+.itc-widget {
+	display: inline-block;
+    vertical-align: top;
+    line-height: 1.8em;
+    padding-bottom: 30px;
+}
+
+.itc-widget .wppb-avatar,
+.itc-widget .wppb-avatar img {
+    height: auto !important;
+    width: 80% !important;
+    padding-bottom: 5px;
+}
+
+.itc-widget div {
+    margin: auto;
+}
+.itc-widget.itc-centered div {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .itc-widget .wppb-name { font-size: 1.2em; font-weight: bold; }
+    .itc-widget .wppb-tcw-functions { font-size: 1.4em; }
+    .itc-widget .wppb-standard-profile-item,
+    .itc-widget .wppb-moreinfo
+        { font-size: 1em; font-style: italic; }
+}
+@media (max-width: 767px) {
+    .itc-widget .wppb-name { font-size: 1em; font-weight: bold; }
+    .itc-widget .wppb-tcw-functions { font-size: 1.1em; }
+    .itc-widget .wppb-standard-profile-item,
+    .itc-widget .wppb-moreinfo
+        { font-size: 0.8em; font-style: italic; }
+}
+
+@media screen and (min-width: 768px) {
+	.itc-widget { width: 32%; }
+}
+
+@media screen and (max-width: 767px) {
+	.itc-widget { width: 49%; }
+}
+
+@media (max-width: 479px) {
+	.itc-widget { width: 99%; }
+}

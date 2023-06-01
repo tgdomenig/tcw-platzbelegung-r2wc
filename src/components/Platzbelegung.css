@@ -99,3 +99,43 @@
   font-weight: bold;
   font-size: larger;
 }
+
+/* ----------- Additional Styles for Direflow-Webkomponente (Anzeige Platzbelegung) --------- */
+.web-component.tcw-platzbelegung .rbc-toolbar .rbc-button {
+  color: #E30615 !important;
+}
+
+/*
+.web-component.tcw-platzbelegung .rbc-time-header-content {
+  line-height: 40px;
+}
+*/
+
+.web-component.tcw-platzbelegung .rbc-time-header-content .rbc-header, .rbc-agenda-view .rbc-agenda-table .rbc-header {
+  color: white;
+  background-color: #E30615;
+/*    margin: auto auto; */
+}
+
+.web-component.tcw-platzbelegung .rbc-time-header-content .rbc-time-header-cell {
+  min-height: 48px;
+}
+.web-component.tcw-platzbelegung .rbc-time-header-content .rbc-time-header-cell .rbc-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: normal;
+}
+
+@media (max-width: 480px) { /* reduce fonts for small screens */
+  .web-component.tcw-platzbelegung .rbc-toolbar .rbc-button {
+      padding-left: 6px;
+      padding-right: 6px;
+      font-size: 12px;
+  }
+  .rbc-time-gutter { font-size: 12px; }
+/*    .rbc-label.rbc-time-header-gutter { width: 40px; max-width: none; min-width: none;} */
+}
+
+/* ----------- END Additional Styles for Direflow-Webkomponente (Anzeige Platzbelegung) --------- */
+  
