@@ -34,11 +34,11 @@ npm install date-fns
 npm install antd
 npm install react-big-calendar
 
-// WICHTIG: im letzten Schritt des Tutorials (s. oben) wird ein Shell-Skript erstellt, das den Hash-Code aus dem Namen des main-Programms löscht. 
-// Das scheint nicht zu funktionieren. 
-// DESHALB MUSS NACH JEDEM DEPLOYMENT DER NAME DES SCRIPTS IM EMPFANGENDEN HTML_TEILS (ALSO IN WORDPRESS ANGEPASST WERDEN.
-
-// create shell-file predeploy.sh to remove hash from main build (see tutorial mentioned above) and add it to the predeploy-script in package.json:
+// NOTE: Beim Deployment werden Dateien main.xxxx.js und main.xxxx.css erstellt, wobei die Hashes xxxx jedes Mal ändern.
+// Das ist einerseits mühsam, weil dann der HTML-Code, der das JS-Script referenziert, jedesmal angepasst werden muss.
+// Selbst dann würde es in unserem Fall aber nicht funktionieren, weil im Programm selbst die resultierende CSS-Datei main.xxxx.css gelinkt wird 
+// (s. Platzbelegung.js). Deshalb müssen die Hash-Code beim Deployment entfernt werden (s. auch oben erwähntes Tutorial).
+// Das wird mit dem Shell-Script predeploy.sh und einem Eintrag im package.js erreicht:
 "predeploy": "npm run build && sh predeploy.sh"
 
 
