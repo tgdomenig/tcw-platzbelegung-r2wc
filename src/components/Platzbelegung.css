@@ -1,7 +1,6 @@
-.rbc-button {
-  background-color: #096dd9 !important;
+.rbc-time-header .rbc-label.rbc-time-header-gutter {
+  width: 52px !important;
 }
-
 .rbc-events-container {
   /* using Antd-Colors */
   --antd-yellow-5:  #ffec3d;

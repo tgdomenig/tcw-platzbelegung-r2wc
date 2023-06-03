@@ -232,6 +232,7 @@ export default function Platzbelegung() {
 
   return(
     <div >
+      <link href="https://tgdomenig.github.io/tcw-platzbelegung-r2wc/static/css/main.css" rel="stylesheet" />
       <div id="tcw-platzbelegung-web-component" className="web-component tcw-platzbelegung">
 
       <Modal {...popupProps} footer={false} visible={eventPopupVisible} onCancel={()=> { setEventPopupVisible(false); }} >
@@ -318,3 +319,10 @@ function getStartOfWeek(day=new Date()) {
   const opts = {weekStartsOn: 1};
   return(startOfWeek(day, opts));
 }
+
+const myStyles = {
+  tryit: {
+    backgroundColor: "green",
+    color: 'blue',
+  }
+};
